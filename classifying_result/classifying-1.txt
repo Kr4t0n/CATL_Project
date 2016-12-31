@@ -1,0 +1,7 @@
+if imp <= 7.36944675446:
+    return Poor 
+else:  # if imp > 7.36944675446
+    if dcrfu25 <= 0.885011911392:
+        return Poor 
+    else:  # if dcrfu25 > 0.885011911392
+        return Good 

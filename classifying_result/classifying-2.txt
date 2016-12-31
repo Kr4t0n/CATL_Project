@@ -1,0 +1,16 @@
+if volume-80d <= 0.25626116991:
+    if formation <= 1287.50927734:
+        return Poor 
+    else:  # if formation > 1287.50927734
+        if formation <= 1335.8125:
+            if calendar60-30d <= 0.929984927177:
+                return Poor 
+            else:  # if calendar60-30d > 0.929984927177
+                return Good 
+        else:  # if formation > 1335.8125
+            return Good 
+else:  # if volume-80d > 0.25626116991
+    if calendar60-30d <= 0.936311781406:
+        return Poor 
+    else:  # if calendar60-30d > 0.936311781406
+        return Good 
