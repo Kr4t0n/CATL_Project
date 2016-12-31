@@ -1,13 +1,10 @@
-if k <= 0.0668852031231:
-    if dcrfu25 <= 0.880769491196:
-        return Poor 
-    else:  # if dcrfu25 > 0.880769491196
+if ['cycle45-600'] <= 0.943518400192:
+    if ['k'] <= 0.0665043070912:
         return Good 
-else:  # if k > 0.0668852031231
-    if calendar60-60d <= 0.903381705284:
-        return Poor 
-    else:  # if calendar60-60d > 0.903381705284
-        if cycle45-900 <= 0.914792060852:
-            return Poor 
-        else:  # if cycle45-900 > 0.914792060852
-            return Good 
+    else:  # if ['k'] > 0.0665043070912
+        return poor 
+else:  # if ['cycle45-600'] > 0.943518400192
+    if ['imp'] <= 7.27462387085:
+        return poor 
+    else:  # if ['imp'] > 7.27462387085
+        return Good 

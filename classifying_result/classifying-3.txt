@@ -1,7 +1,10 @@
-if imp <= 7.359416008:
-    return Poor 
-else:  # if imp > 7.359416008
-    if formation <= 1277.47314453:
-        return Poor 
-    else:  # if formation > 1277.47314453
+if ['imp'] <= 7.44702863693:
+    if ['calendar60-60d'] <= 0.923930108547:
+        return poor 
+    else:  # if ['calendar60-60d'] > 0.923930108547
+        return Good 
+else:  # if ['imp'] > 7.44702863693
+    if ['calendar60-60d'] <= 0.846864283085:
+        return poor 
+    else:  # if ['calendar60-60d'] > 0.846864283085
         return Good 

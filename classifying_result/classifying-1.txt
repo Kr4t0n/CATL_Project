@@ -1,7 +1,10 @@
-if imp <= 7.36944675446:
-    return Poor 
-else:  # if imp > 7.36944675446
-    if dcrfu25 <= 0.885011911392:
-        return Poor 
-    else:  # if dcrfu25 > 0.885011911392
+if ['k'] <= 0.0665043070912:
+    if ['formation'] <= 1270.39501953:
+        return poor 
+    else:  # if ['formation'] > 1270.39501953
+        return Good 
+else:  # if ['k'] > 0.0665043070912
+    if ['imp'] <= 8.08599472046:
+        return poor 
+    else:  # if ['imp'] > 8.08599472046
         return Good 
