@@ -20,6 +20,7 @@ def tree_to_code(tree, feature_names, class_names, result_filename):
 			fr.write('{}return {} \n'.format(indent, class_names[np.argmax(tree_.value[node] / tree_.weighted_n_node_samples[node])]))
 	
 	recurse(0, 0)
+	fr.close()
 
 if __name__ == '__main__':
 	main()
