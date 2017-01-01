@@ -4,6 +4,11 @@
 ## Version ##
 **1.0**
 
+## Database Requirements ##
+
+ Barcode | Property 1 | Property 2 | ... | Result | Class
+ ---- | ---- | ---- | ---- | ---- | ---
+
 ## Clustering Part ##
 
 **Please run clustering.py to generate the ensemble clusters.**
@@ -17,6 +22,22 @@ Options:
   -h, --help            show this help message and exit
   -s SERIAL_NUMBER, --serial_number=SERIAL_NUMBER
                         read data from db using serial_number
+  -f FILENAME, --file=FILENAME
+                        read data from FILENAME
+  -S, --standard        standard the dataset
+```
+
+## Classifying Part ##
+**Please run classifying.py to generate the result.**
+The partial help document can be found in terminal.
+
+```
+Usage: classifying.py [options]
+
+Options:
+  -h, --help            show this help message and exit
+  -t TABLE_NAME, --table=TABLE_NAME
+                        read data from db using table_name
   -f FILENAME, --file=FILENAME
                         read data from FILENAME
   -S, --standard        standard the dataset
