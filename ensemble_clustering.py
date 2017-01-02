@@ -4,6 +4,7 @@ from munkres import Munkres
 from sklearn.cluster import KMeans, AgglomerativeClustering, SpectralClustering
 from increasing_cluster import tran_increase
 from plot_cluster import generating_KMeans_plot, generating_Spectral_plot, generating_Agglomerative_plot, generating_Ensemble_plot
+from statistic_cluster import statistic_KMeans, statistic_Spectral, statistic_Agglomerative, statistic_Ensemble
 
 def replaced(array, u1, u2, cor):
 	#copy array for isolation
@@ -125,17 +126,20 @@ def generating_ensemble_clusters(X, y):
 	print 'Generating KMeans cluster...'
 	y_KMeans = KMeans(n_clusters = 2).fit(X)
 	generating_KMeans_plot(2, X, y_KMeans)
+	statistic_KMeans(2, X, y_KMeans)
 	# print y_KMeans.labels_
 	
 	# SpectralClustering Algorithm
 	print 'Generating Spectral cluster...'
 	y_SC = SpectralClustering(n_clusters = 2).fit(X)
 	generating_Spectral_plot(2, X, y_SC)
+	statistic_Spectral(2, X, y_SC)
 	# print y_SC.labels_
 	
 	# AgglomerativeClustering Algorithm
 	y_AC = AgglomerativeClustering(n_clusters = 2).fit(X)
-	generating_Agglomerative_plot(2, X, y_SC)
+	generating_Agglomerative_plot(2, X, y_AC)
+	statistic_Agglomerative(2, X, y_AC)
 	# print y_AC.labels_
 	
 	# ensembling phase
@@ -161,6 +165,7 @@ def generating_ensemble_clusters(X, y):
 	# print final_clusters
 	
 	generating_Ensemble_plot(2, X, final_clusters)
+	statistic_Ensemble(2, X, final_clusters)
 	return final_clusters
 
 if __name__ == '__main__':
