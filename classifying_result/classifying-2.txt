@@ -1,4 +1,10 @@
-if ['dcrfu25'] <= 0.956874132156:
-    return poor 
-else:  # if ['dcrfu25'] > 0.956874132156
-    return Good 
+if k <= 0.0859433561563:
+    if formation <= 1302.90551758:
+        return Good 
+    else:  # if formation > 1302.90551758
+        return Good 
+else:  # if k > 0.0859433561563
+    if calendar60-120d <= 0.778562605381:
+        return Good 
+    else:  # if calendar60-120d > 0.778562605381
+        return Good 

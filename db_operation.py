@@ -64,7 +64,9 @@ def load_property_from_MySQL(table_name):
 	except:
 		print 'Error: unable to fetch feature_names and class_names'
 	# Eliminate the barcode, result and class and turn into list
-	feature_names = map(list, result)[1:-2]
+	feature_names_temp = map(list, result)[1:-2]
+	for idx in range(len(feature_names_temp)):
+		feature_names.append(feature_names_temp[idx][0])
 	
 	# Get the class_names in order
 	sql = 'select result from {}'.format(table_name)

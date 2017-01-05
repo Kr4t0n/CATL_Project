@@ -121,25 +121,25 @@ def voting(clusters):
 	#return the result of majority vote	
 	return voted
 
-def generating_ensemble_clusters(X, y):
+def generating_ensemble_clusters(X, y, barcode, feature_names):
 	# KMeans Algorithm
 	print 'Generating KMeans cluster...'
 	y_KMeans = KMeans(n_clusters = 2).fit(X)
 	generating_KMeans_plot(2, X, y_KMeans)
-	statistic_KMeans(2, X, y_KMeans)
+	statistic_KMeans(2, X, y_KMeans, barcode, feature_names)
 	# print y_KMeans.labels_
 	
 	# SpectralClustering Algorithm
 	print 'Generating Spectral cluster...'
 	y_SC = SpectralClustering(n_clusters = 2).fit(X)
 	generating_Spectral_plot(2, X, y_SC)
-	statistic_Spectral(2, X, y_SC)
+	statistic_Spectral(2, X, y_SC, barcode, feature_names)
 	# print y_SC.labels_
 	
 	# AgglomerativeClustering Algorithm
 	y_AC = AgglomerativeClustering(n_clusters = 2).fit(X)
 	generating_Agglomerative_plot(2, X, y_AC)
-	statistic_Agglomerative(2, X, y_AC)
+	statistic_Agglomerative(2, X, y_AC, barcode, feature_names)
 	# print y_AC.labels_
 	
 	# ensembling phase
@@ -165,7 +165,7 @@ def generating_ensemble_clusters(X, y):
 	# print final_clusters
 	
 	generating_Ensemble_plot(2, X, final_clusters)
-	statistic_Ensemble(2, X, final_clusters)
+	statistic_Ensemble(2, X, final_clusters, barcode, feature_names)
 	return final_clusters
 
 if __name__ == '__main__':

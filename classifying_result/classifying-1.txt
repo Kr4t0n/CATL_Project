@@ -1,10 +1,19 @@
-if ['k'] <= 0.0665043070912:
-    if ['formation'] <= 1270.39501953:
-        return poor 
-    else:  # if ['formation'] > 1270.39501953
+if calendar60-60d <= 0.864629030228:
+    if k <= 0.085533618927:
+        if imp <= 7.12559700012:
+            return Good 
+        else:  # if imp > 7.12559700012
+            if k <= 0.063580095768:
+                return Good 
+            else:  # if k > 0.063580095768
+                return Good 
+    else:  # if k > 0.085533618927
         return Good 
-else:  # if ['k'] > 0.0665043070912
-    if ['imp'] <= 8.08599472046:
-        return poor 
-    else:  # if ['imp'] > 8.08599472046
+else:  # if calendar60-60d > 0.864629030228
+    if cycle45-600 <= 0.953212380409:
+        if formation <= 1303.98681641:
+            return Good 
+        else:  # if formation > 1303.98681641
+            return Good 
+    else:  # if cycle45-600 > 0.953212380409
         return Good 

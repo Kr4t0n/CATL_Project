@@ -1,6 +1,6 @@
 import warnings
 from ensemble_clustering import generating_ensemble_clusters
-from db_operation import load_from_MySQL, write_to_MySQL
+from db_operation import load_from_MySQL, write_to_MySQL, load_property_from_MySQL
 from file_operation import load_dataset
 from standard import standard_dataset
 from optparse import OptionParser
@@ -17,9 +17,10 @@ def parser_menu():
 		parser.error('Options -t and -f are mutually exclusive')
 	elif options.table_name:
 		barcode, X, y = load_from_MySQL(options.table_name)
+		feature_names, class_names = load_property_from_MySQL(options.table_name)
 		if options.standard_verbose:
 			X = standard_dataset(X)
-		final_clusters = generating_ensemble_clusters(X, y)
+		final_clusters = generating_ensemble_clusters(X, y, barcode, feature_names)
 		if len(barcode) != len(final_clusters):
 			Error('Error in size, code: 0x0001')
 		else:

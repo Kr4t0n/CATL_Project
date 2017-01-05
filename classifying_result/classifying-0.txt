@@ -1,10 +1,22 @@
-if ['cycle45-600'] <= 0.943518400192:
-    if ['k'] <= 0.0665043070912:
+if calendar60-30d <= 0.913495182991:
+    if dcrfu25 <= 1.06205368042:
+        if formation <= 1321.52050781:
+            return Good 
+        else:  # if formation > 1321.52050781
+            return Good 
+    else:  # if dcrfu25 > 1.06205368042
         return Good 
-    else:  # if ['k'] > 0.0665043070912
-        return poor 
-else:  # if ['cycle45-600'] > 0.943518400192
-    if ['imp'] <= 7.27462387085:
-        return poor 
-    else:  # if ['imp'] > 7.27462387085
-        return Good 
+else:  # if calendar60-30d > 0.913495182991
+    if dcrfu25 <= 0.795896291733:
+        if capacity <= 1980.77905273:
+            return Good 
+        else:  # if capacity > 1980.77905273
+            return Good 
+    else:  # if dcrfu25 > 0.795896291733
+        if calendar60-120d <= 0.896719455719:
+            return Good 
+        else:  # if calendar60-120d > 0.896719455719
+            if cycle45-300 <= 0.978011786938:
+                return Good 
+            else:  # if cycle45-300 > 0.978011786938
+                return Good 

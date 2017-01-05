@@ -4,7 +4,11 @@
 ## Version ##
 **1.0**
 
-## Database Requirements ##
+## Requirements ##
+scikit-learn
+pydot
+
+## Database Structure ##
 
  Barcode | Property 1 | Property 2 | ... | Result | Class
  ---- | ---- | ---- | ---- | ---- | ---

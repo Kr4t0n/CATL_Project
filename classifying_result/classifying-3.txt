@@ -1,10 +1,13 @@
-if ['imp'] <= 7.44702863693:
-    if ['calendar60-60d'] <= 0.923930108547:
-        return poor 
-    else:  # if ['calendar60-60d'] > 0.923930108547
+if dcrfu25 <= 0.795896291733:
+    if cycle45-600 <= 0.915335595608:
         return Good 
-else:  # if ['imp'] > 7.44702863693
-    if ['calendar60-60d'] <= 0.846864283085:
-        return poor 
-    else:  # if ['calendar60-60d'] > 0.846864283085
+    else:  # if cycle45-600 > 0.915335595608
+        if dcr25 <= 0.0239090770483:
+            return Good 
+        else:  # if dcr25 > 0.0239090770483
+            return Good 
+else:  # if dcrfu25 > 0.795896291733
+    if formation <= 1310.88769531:
+        return Good 
+    else:  # if formation > 1310.88769531
         return Good 
