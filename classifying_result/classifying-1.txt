@@ -1,19 +1,5 @@
-if calendar60-60d <= 0.864629030228:
-    if k <= 0.085533618927:
-        if imp <= 7.12559700012:
-            return Good 
-        else:  # if imp > 7.12559700012
-            if k <= 0.063580095768:
-                return Good 
-            else:  # if k > 0.063580095768
-                return Good 
-    else:  # if k > 0.085533618927
-        return Good 
-else:  # if calendar60-60d > 0.864629030228
-    if cycle45-600 <= 0.953212380409:
-        if formation <= 1303.98681641:
-            return Good 
-        else:  # if formation > 1303.98681641
-            return Good 
-    else:  # if cycle45-600 > 0.953212380409
-        return Good 
+if imp <= 7.28889465332, formation <= 1311.96899414 return Poor
+if imp <= 7.28889465332, formation > 1311.96899414 return Good
+if imp > 7.28889465332, calendar60-30d <= 0.845707535744 return Poor
+if imp > 7.28889465332, calendar60-30d > 0.845707535744, calendar60-60d <= 0.846864283085 return Poor
+if imp > 7.28889465332, calendar60-30d > 0.845707535744, calendar60-60d > 0.846864283085 return Good

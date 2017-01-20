@@ -1,22 +1,7 @@
-if calendar60-30d <= 0.913495182991:
-    if dcrfu25 <= 1.06205368042:
-        if formation <= 1321.52050781:
-            return Good 
-        else:  # if formation > 1321.52050781
-            return Good 
-    else:  # if dcrfu25 > 1.06205368042
-        return Good 
-else:  # if calendar60-30d > 0.913495182991
-    if dcrfu25 <= 0.795896291733:
-        if capacity <= 1980.77905273:
-            return Good 
-        else:  # if capacity > 1980.77905273
-            return Good 
-    else:  # if dcrfu25 > 0.795896291733
-        if calendar60-120d <= 0.896719455719:
-            return Good 
-        else:  # if calendar60-120d > 0.896719455719
-            if cycle45-300 <= 0.978011786938:
-                return Good 
-            else:  # if cycle45-300 > 0.978011786938
-                return Good 
+if cycle45-300 <= 0.978011786938, volume-80d <= 0.365011930466, cycle45-600 <= 0.949548840523, volume-80d <= 0.015354800038 return Poor
+if cycle45-300 <= 0.978011786938, volume-80d <= 0.365011930466, cycle45-600 <= 0.949548840523, volume-80d > 0.015354800038 return Good
+if cycle45-300 <= 0.978011786938, volume-80d <= 0.365011930466, cycle45-600 > 0.949548840523, dcrfu25 <= 1.20159363747 return Poor
+if cycle45-300 <= 0.978011786938, volume-80d <= 0.365011930466, cycle45-600 > 0.949548840523, dcrfu25 > 1.20159363747 return Good
+if cycle45-300 <= 0.978011786938, volume-80d > 0.365011930466 return Poor
+if cycle45-300 > 0.978011786938, imp <= 7.39557266235 return Poor
+if cycle45-300 > 0.978011786938, imp > 7.39557266235 return Good
