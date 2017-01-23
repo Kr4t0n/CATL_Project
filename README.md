@@ -9,9 +9,14 @@ scikit-learn
 pydot
 
 ## Database Structure ##
-
+Data Source 
+***
  Barcode | Property 1 | Property 2 | ... | Result | Class
- ---- | ---- | ---- | ---- | ---- | ---
+ ---- | ---- | ---- | ---- | ---- | ----
+Decision Tree Result
+***
+Package | Tree | Index | Feature | Symbol | Threshold | Class
+---- | ---- | ---- | ---- | ---- | ---- | ----
 
 ## Clustering Part ##
 

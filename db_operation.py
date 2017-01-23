@@ -48,6 +48,19 @@ def write_to_MySQL(table_name, barcode, final_clusters):
 		conn.commit()
 		curr.close()
 	conn.close()
+	
+def db_exec(database, sql):
+	''' Using statement sql to change the database'''
+	conn = MySQLdb.connect(user = 'root', passwd = 'password', host = '127.0.0.1')
+	conn.select_db(database)
+	curr = conn.cursor()
+	try:
+		curr.execute(sql)
+	except:
+		print 'Error: unable to change the database'
+	conn.commit()
+	curr.close()
+	conn.close()
 
 def load_property_from_MySQL(table_name):
 	# load the featrure_names and class_names from MySQL using table_name

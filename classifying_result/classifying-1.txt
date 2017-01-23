@@ -1,5 +1,7 @@
-if imp <= 7.28889465332, formation <= 1311.96899414 return Poor
-if imp <= 7.28889465332, formation > 1311.96899414 return Good
-if imp > 7.28889465332, calendar60-30d <= 0.845707535744 return Poor
-if imp > 7.28889465332, calendar60-30d > 0.845707535744, calendar60-60d <= 0.846864283085 return Poor
-if imp > 7.28889465332, calendar60-30d > 0.845707535744, calendar60-60d > 0.846864283085 return Good
+if k <= 0.0859433561563, capacity <= 1979.38024902, calendar60-120d <= 0.84328019619 return Poor
+if k <= 0.0859433561563, capacity <= 1979.38024902, calendar60-120d > 0.84328019619, calendar60-120d <= 0.895680725574 return Good
+if k <= 0.0859433561563, capacity <= 1979.38024902, calendar60-120d > 0.84328019619, calendar60-120d > 0.895680725574, k <= 0.0461889877915 return Good
+if k <= 0.0859433561563, capacity <= 1979.38024902, calendar60-120d > 0.84328019619, calendar60-120d > 0.895680725574, k > 0.0461889877915 return Poor
+if k <= 0.0859433561563, capacity > 1979.38024902 return Good
+if k > 0.0859433561563, calendar60-60d <= 0.872191429138 return Poor
+if k > 0.0859433561563, calendar60-60d > 0.872191429138 return Good

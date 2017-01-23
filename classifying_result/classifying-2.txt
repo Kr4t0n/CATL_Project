@@ -1,8 +1,2 @@
-if capacity <= 1975.29760742, cycle45-900 <= 0.915935516357 return Poor
-if capacity <= 1975.29760742, cycle45-900 > 0.915935516357 return Good
-if capacity > 1975.29760742, imp <= 7.72314548492, capacity <= 1980.57275391 return Poor
-if capacity > 1975.29760742, imp <= 7.72314548492, capacity > 1980.57275391, dcr25 <= 0.0209907479584, calendar60-60d <= 0.890271663666 return Good
-if capacity > 1975.29760742, imp <= 7.72314548492, capacity > 1980.57275391, dcr25 <= 0.0209907479584, calendar60-60d > 0.890271663666 return Poor
-if capacity > 1975.29760742, imp <= 7.72314548492, capacity > 1980.57275391, dcr25 > 0.0209907479584, volume-80d <= 0.376118063927 return Good
-if capacity > 1975.29760742, imp <= 7.72314548492, capacity > 1980.57275391, dcr25 > 0.0209907479584, volume-80d > 0.376118063927 return Poor
-if capacity > 1975.29760742, imp > 7.72314548492 return Good
+if formation <= 1309.3815918 return Poor
+if formation > 1309.3815918 return Good
