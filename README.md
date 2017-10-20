@@ -52,13 +52,4 @@ Options:
   -S, --standard        standard the dataset
 ```
 
-## License ##
-MIT
-
-## Support ##
-If you are having issues getting this software to work, you can email <kyle.yang1995@gmail.com>
-
-## Authors ##
-Yang Zhengkai, Kyle
-
 
