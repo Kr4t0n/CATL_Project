@@ -5,8 +5,8 @@
 **1.0**
 
 ## Requirements ##
-scikit-learn
-pydot
+* scikit-learn
+* pydot
 
 ## Database Structure ##
 Data Source 
